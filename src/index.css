@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Light Mode - Premium Minimalist Palette */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --card-glass: 0 0% 100% / 0.7;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 0 0% 20%;
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 0 0% 94%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
+    
+    --accent-gradient-start: 0 0% 30%;
+    --accent-gradient-end: 0 0% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 20%;
+
+    --radius: 0.75rem;
+    
+    /* Custom portfolio tokens */
+    --glass-bg: 0 0% 100% / 0.5;
+    --glass-border: 0 0% 0% / 0.08;
+    --shadow-soft: 0 10px 40px -10px hsl(0 0% 0% / 0.08);
+    --shadow-glow: 0 0 60px hsl(0 0% 0% / 0.15);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Rose Theme - Background: #FCF7F8, Accent: #A31621 */
+  .theme-rose {
+    --background: 350 50% 98%;
+    --foreground: 0 0% 10%;
+
+    --card: 350 50% 99%;
+    --card-foreground: 0 0% 10%;
+    --card-glass: 350 50% 99% / 0.7;
+
+    --popover: 350 50% 99%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 355 86% 38%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 350 30% 95%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 350 20% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 355 86% 38%;
+    --accent-foreground: 0 0% 100%;
+    
+    --accent-gradient-start: 355 86% 45%;
+    --accent-gradient-end: 355 86% 30%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 350 20% 90%;
+    --input: 350 20% 90%;
+    --ring: 355 86% 38%;
+    
+    /* Custom portfolio tokens */
+    --glass-bg: 350 50% 99% / 0.5;
+    --glass-border: 355 86% 38% / 0.1;
+    --shadow-soft: 0 10px 40px -10px hsl(355 86% 38% / 0.15);
+    --shadow-glow: 0 0 60px hsl(355 86% 38% / 0.2);
+  }
+
+  /* Mint Theme - Background: #F8FFE5, Accent: #06D6A0 */
+  .theme-mint {
+    --background: 75 100% 95%;
+    --foreground: 0 0% 10%;
+
+    --card: 75 100% 97%;
+    --card-foreground: 0 0% 10%;
+    --card-glass: 75 100% 97% / 0.7;
+
+    --popover: 75 100% 97%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 166 95% 43%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 75 60% 92%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 75 40% 94%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 166 95% 43%;
+    --accent-foreground: 0 0% 100%;
+    
+    --accent-gradient-start: 166 95% 50%;
+    --accent-gradient-end: 166 95% 35%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 75 30% 88%;
+    --input: 75 30% 88%;
+    --ring: 166 95% 43%;
+    
+    /* Custom portfolio tokens */
+    --glass-bg: 75 100% 97% / 0.5;
+    --glass-border: 166 95% 43% / 0.1;
+    --shadow-soft: 0 10px 40px -10px hsl(166 95% 43% / 0.15);
+    --shadow-glow: 0 0 60px hsl(166 95% 43% / 0.2);
+  }
+
+  .dark {
+    /* Dark Mode - Premium Minimalist Palette */
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
+    --card-glass: 0 0% 12% / 0.7;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 0% 85%;
+    --primary-foreground: 0 0% 10%;
+    
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 0 0% 90%;
+    --accent-foreground: 0 0% 10%;
+    
+    --accent-gradient-start: 0 0% 70%;
+    --accent-gradient-end: 0 0% 90%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 85%;
+    
+    /* Custom portfolio tokens */
+    --glass-bg: 0 0% 12% / 0.5;
+    --glass-border: 0 0% 100% / 0.08;
+    --shadow-soft: 0 10px 40px -10px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 60px hsl(0 0% 100% / 0.1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Smooth theme transitions */
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: hsl(var(--glass-bg));
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid hsl(var(--glass-border));
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--accent-gradient-start)), hsl(var(--accent-gradient-end)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .bg-gradient-accent {
+    background: linear-gradient(135deg, hsl(var(--accent-gradient-start)), hsl(var(--accent-gradient-end)));
+  }
+  
+  .gradient-border {
+    position: relative;
+  }
+  
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(135deg, hsl(var(--accent-gradient-start)), hsl(var(--accent-gradient-end)));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+  
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+}
